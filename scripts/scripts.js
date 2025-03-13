@@ -126,4 +126,13 @@ async function loadPage() {
   loadDelayed();
 }
 
+window.addEventListener("scroll", () =>{
+  if(window.scrollY < 1048) {
+   document.querySelector(".section.highlight").style.backgroundColor = "rgb(255, 254, 249)";
+  } else {
+   document.querySelector(".section.highlight").style.backgroundColor = "rgb(231, 244, 255)";
+  }
+ })
+ 
+
 loadPage();

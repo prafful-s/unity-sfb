@@ -3,25 +3,31 @@
   margin: 0;
   padding: 0;
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(257px, 1fr));
+  grid-template-columns: repeat(3, 1fr);
   grid-gap: 24px;
 }
 
 .cards > ul > li {
-  border: 1px solid #dadada;
-  background-color: var(--background-color);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
 }
 
 .cards .cards-card-body {
   margin: 16px;
+  text-align: center;
 }
 
 .cards .cards-card-image {
   line-height: 0;
+  display: flex;
+  justify-content: center;
+  width: 100%;
 }
 
 .cards > ul > li img {
-  width: 100%;
-  aspect-ratio: 4 / 3;
+  width: 120px;
+  height: 120px;
   object-fit: cover;
 }

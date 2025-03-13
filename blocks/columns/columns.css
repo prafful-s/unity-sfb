@@ -19,6 +19,40 @@
   display: block;
 }
 
+.columns a {
+  color: black;
+  font-size: 16px;
+  background-color: transparent;
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  margin-top: 1.2em;
+  font-weight: 600;
+}
+
+.columns a::after {
+  content: "→";
+  display: inline-block;
+  font-weight: bold;
+  transition: transform 0.3s ease;
+}
+
+.columns a:hover::after {
+  transform: translateX(4px);
+}
+
+.columns a:hover {
+  text-decoration: none;
+}
+
+.columns {
+  font-family: __Archivo_6c4688, __Archivo_Fallback_6c4688;
+}
+
+.columns > div {
+  margin-top: 100px;
+}
+
 @media (width >= 900px) {
   .columns > div {
     align-items: center;
