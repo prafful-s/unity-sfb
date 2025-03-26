@@ -13,25 +13,6 @@ import {
   loadCSS,
 } from './aem.js';
 
-import {
-  sampleRUM,
-  buildBlock,
-  loadHeader,
-  loadFooter,
-  decorateIcons,
-  toClassName,
-  decorateSections,
-  decorateBlocks,
-  waitForLCP,
-  loadBlocks,
-  loadBlock,
-  loadCSS,
-  loadScript,
-  getAllMetadata,
-  getMetadata,
-  decorateBlock,
-} from './lib-franklin.js';
-
 /**
  * Builds hero block and prepends to main in a new section.
  * @param {Element} main The container element
