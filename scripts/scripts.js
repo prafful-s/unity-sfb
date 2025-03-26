@@ -14,6 +14,7 @@ import {
 } from './aem.js';
 
 import {
+  sampleRUM,
   toClassName,
   loadBlocks,
   loadBlock,
