@@ -13,6 +13,17 @@ import {
   loadCSS,
 } from './aem.js';
 
+import {
+  toClassName,
+  loadBlocks,
+  loadBlock,
+  loadScript,
+  getAllMetadata,
+  getMetadata,
+  decorateBlock,
+  toCamelCase
+} from './lib-franklin.js';
+
 /**
  * Builds hero block and prepends to main in a new section.
  * @param {Element} main The container element
