@@ -13,6 +13,25 @@ import {
   loadCSS,
 } from './aem.js';
 
+import {
+  sampleRUM,
+  buildBlock,
+  loadHeader,
+  loadFooter,
+  decorateIcons,
+  toClassName,
+  decorateSections,
+  decorateBlocks,
+  waitForLCP,
+  loadBlocks,
+  loadBlock,
+  loadCSS,
+  loadScript,
+  getAllMetadata,
+  getMetadata,
+  decorateBlock,
+} from './lib-franklin.js';
+
 /**
  * Builds hero block and prepends to main in a new section.
  * @param {Element} main The container element
@@ -27,6 +46,16 @@ function buildHeroBlock(main) {
     main.prepend(section);
   }
 }
+
+const pluginContext = {
+  getAllMetadata,
+  getMetadata,
+  loadCSS,
+  loadScript,
+  sampleRUM,
+  toCamelCase,
+  toClassName,
+};
 
 /**
  * load fonts.css and set a session storage flag
@@ -133,6 +162,6 @@ window.addEventListener("scroll", () =>{
    document.querySelector(".section.highlight").style.backgroundColor = "rgb(231, 244, 255)";
   }
  })
- 
+
 
 loadPage();
